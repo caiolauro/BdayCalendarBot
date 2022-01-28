@@ -2,8 +2,10 @@
 
 ## Project description
 
-The purpose of this project is to bring happiness to people by remembering you about special dates from special people you love.
+This project sends you reminders to not forget Birthday dates of people you love.
 
+### Project Expansion
+Imagine you can schedule an entire Gcalendar event using WhatsApp. Informing name, event date and time, description and even invitations. 
 
 ### Technologies applied
 
