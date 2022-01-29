@@ -17,23 +17,24 @@ def get_events_list():
     for event in events:
         start = event['start'].get('dateTime', event['start'].get('date'))
         if start[0:4] == '2022':
-            event_list.append(dict(date = start[0:10], name =  event['summary']))
+            event_list.append(dict(date = start[0:10],time= start[11:19], name =  event['summary']))
     Events22 = dict(eventsList=event_list,today_ts=now)
-    #print(Events22)
+    print(Events22)
     return Events22
 
 
 
 def get_today_events():
-    message:str = '---->> Today Events <<----\n'
+    
     
     events = get_events_list()['eventsList']
     today = datetime.datetime.now().isoformat()[0:10] # 'Z' indicates UTC time
+    message:str = '>> Eventos para ' + today + '<scape>'
     print(today)
-    for event in events:
+    for index, event in enumerate(events):
         if event['date'] ==  today:
-            print(event['name'])
-            event = '- ' + event['name'] + '\n'
-            message = message + '\n' + event
-
+            #print(event['name'])
+            event = str(index + 1)+") " + event['name'] +' | ' + event['time'] + '<scape>'
+            message = message + '<scape>' + event
+    print(message)
     return message
