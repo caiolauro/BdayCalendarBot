@@ -1,11 +1,8 @@
 # Birthdays WhatsApp Bot
 
-## Project description
+## Description
 
-This project sends you reminders to not forget Birthday dates of people you love.
-
-### Project Expansion
-Imagine you can schedule an entire Gcalendar event using WhatsApp. Informing name, event date and time, description and invitations. 
+Bot that sends Bday reminders on WhatsApp.
 
 ### Technologies applied
 
